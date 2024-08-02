@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+#pseudo-classes-container,
+#pseudo-elements-container {
+    display: flex;
+    gap: 30px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+}
+
+/* pseudo classes */
+#hover-box {
+    background-color: blue;
+}
+
+#hover-box:hover {
+    background-color: blueviolet;
+}
+
+#link-box {
+    background-color: #e96767;
+}
+
+#checked-box {
+    background-color: cadetblue;
+}
+
+#link-box a:link {
+    color: aquamarine;
+}
+
+#checked-box input:checked {
+    height: 50px;
+    width: 50px;
+}
+
+#disabled-box, #enabled-box, #focus-box {
+    background-color: burlywood;
+}
+
+input[type="text"] {
+    width: 90px;
+}
+
+#disabled-box input:disabled {
+    background: #47b6ff;
+}
+
+#enabled-box input:enabled {
+    background-color: tomato;
+}
+
+#focus-box input:focus {
+    background-color: #53ff47;
+}
+
+/* pseudo elements */
+#pseudo-elements-container {
+    margin-top: 50px;
+}
+
+#after-box h3::after {
+    content: "Texto após o h3";
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#after-box, #before-box {
+    background-color: cyan;
+}
+
+#before-box h3::after {
+    content: "Texto antes do h3";
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#first-letter-box, #first-line-box {
+    background-color: yellow;
+}
+
+#first-letter-box h3::first-letter {
+    color: green;
+}
+
+#first-line-box h3::first-line {
+    color: green;
+}
+
+#marker-box {
+    background-color:hotpink;
+}
+
+#marker-box li::marker {
+    color: white;
+}
+
+#selection-box {
+    background-color: purple;
+}
+
+#selection-box h3::selection {
+    background-color: yellow;
+    color: blue;
+}

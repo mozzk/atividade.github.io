@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes e Pseudo Elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pseudo-classes-container">
+        <h2>Pseudo Classes</h2>
+        <div class="box" id="hover-box">
+            <h3>Hover</h3>
+        </div>
+    
+        <div class="box" id="link-box">
+            <h3>:link</h3>
+            <a href="#">Link não visitado</a>
+        </div>
+    
+        <div class="box" id="checked-box">
+            <h3>:checked</h3>
+            <input type="checkbox">
+        </div>
+        
+        <div class="box" id="disabled-box">
+            <h3>:disabled</h3>
+            <input type="text" disabled>
+        </div>
+
+        <div class="box" id="enabled-box">
+            <h3>:enabled</h3>
+            <input type="text" enabled>
+        </div>   
+
+        <div class="box" id="focus-box">
+            <h3>:focus</h3>
+            <input type="text">
+        </div>   
+    </div>
+
+    <div id="pseudo-elements-container">
+        <h2>Pseudo Elementos</h2>
+        <div class="box" id="after-box">
+            <h3>::after</h3>
+        </div>
+
+        <div class="box" id="before-box">
+            <h3>::before</h3>
+        </div>
+
+        <div class="box" id="first-letter-box">
+            <h3>::first-letter</h3>
+        </div>
+
+        <div class="box" id="first-line-box">
+            <h3>::first-line <br>
+                A primeira linha é selecionada
+            </h3>
+        </div>
+
+        <div class="box" id="marker-box">
+            <li>::marker</li>
+        </div>
+
+        <div class="box" id="selection-box">
+            <h3>::selection</h3>
+        </div>
+
+    </div>
+</body>
+</html>
